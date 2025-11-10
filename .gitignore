@@ -1,0 +1,48 @@
+﻿# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Web
+.dart_tool/build/
+.dart_tool/chrome-device/
+
+# Build artifacts
+/build/
+
+# Android
+/android/app/src/main/assets/flutter_assets/
+/android/key.properties
+
+# iOS
+/ios/Flutter/App.framework
+/ios/Flutter/engine.version
+/ios/Flutter/flutter_assets/
+/ios/Runner/GeneratedPluginRegistrant.*
+
+# Ignore sensitive files
+*.jks
+*.keystore
+google-services.json
+**/key.properties
