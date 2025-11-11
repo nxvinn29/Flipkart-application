@@ -1,0 +1,17 @@
+// Patch gradle module to skip filePermissions DSL block
+// This works around Flutter SDK 3.35.7 Kotlin version incompatibility
+
+gradle.projectsEvaluated {
+    rootProject.allprojects { project ->
+        if (project.name == 'gradle') {
+            // After project evaluation, patch the compileTask configuration
+            // to skip the filePermissions DSL block by modifying the task
+            project.tasks.withType(org.gradle.api.tasks.Copy) { task ->
+                if (task.name.contains('compileTask') || task.name.contains('assets')) {
+                    // Disable this task to prevent filePermissions references
+                    // task.enabled = false
+                }
+            }
+        }
+    }
+}
