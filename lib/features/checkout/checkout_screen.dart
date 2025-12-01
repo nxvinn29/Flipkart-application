@@ -3,11 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+// 1. Create a provider to hold the state of the selected payment method.
+final paymentMethodProvider = StateProvider<String>((ref) => 'cod');
+
 class CheckoutScreen extends ConsumerWidget {
   const CheckoutScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // 2. Watch the provider to get the current state and allow updates.
+    final selectedPaymentMethod = ref.watch(paymentMethodProvider);
+    final paymentMethodNotifier = ref.read(paymentMethodProvider.notifier);
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Checkout'),
@@ -95,21 +102,27 @@ class CheckoutScreen extends ConsumerWidget {
               style: Theme.of(context).textTheme.headlineSmall,
             ),
             const SizedBox(height: 16.0),
-            // TODO: Implement cash on delivery
+            // Updated Payment Method Section
             Container(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(8.0),
               decoration: BoxDecoration(
                 color: Colors.grey[200],
                 borderRadius: BorderRadius.circular(8.0),
               ),
-              child: Row(
+              child: Column(
                 children: [
-                  Radio<String>(
+                  RadioListTile<String>(
+                    title: const Text('Cash on Delivery'),
                     value: 'cod',
-                    groupValue: 'cod', // Always selected for now
-                    onChanged: (String? value) {},
+                    groupValue: selectedPaymentMethod,
+                    onChanged: (value) => paymentMethodNotifier.state = value!,
                   ),
-                  const Text('Cash on Delivery'),
+                  RadioListTile<String>(
+                    title: const Text('Card / UPI / Net Banking'),
+                    value: 'online',
+                    groupValue: selectedPaymentMethod,
+                    onChanged: (value) => paymentMethodNotifier.state = value!,
+                  ),
                 ],
               ),
             ),

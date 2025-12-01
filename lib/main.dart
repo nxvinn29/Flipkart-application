@@ -5,7 +5,7 @@ import 'package:bazaar/theme/app_theme.dart';
 import 'package:bazaar/features/home/presentation/providers/theme_provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:bazaar/firebase_options.dart';
-import 'package:bazaar/routes/app_router.dart' as app_router; // Added as app_router alias
+import 'package:bazaar/routes/app_router.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,6 +21,7 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final isDarkMode = ref.watch(isDarkModeProvider);
+    final goRouter = ref.watch(goRouterProvider);
 
     return MaterialApp.router(
       title: 'Bazaar - Flipkart Clone',
@@ -28,7 +29,7 @@ class MyApp extends ConsumerWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
-      routerConfig: app_router.goRouter, // Used app_router.goRouter
+      routerConfig: goRouter,
     );
   }
 }
