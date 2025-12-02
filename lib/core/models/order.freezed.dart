@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,184 +9,29 @@ part of 'order.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
 
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-OrderItem _$OrderItemFromJson(Map<String, dynamic> json) {
-  return _OrderItem.fromJson(json);
-}
-
 /// @nodoc
-mixin _$OrderItem {
-  String get productId => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  String get imageUrl => throw _privateConstructorUsedError;
-  double get price => throw _privateConstructorUsedError;
-  int get quantity => throw _privateConstructorUsedError;
-
-  /// Serializes this OrderItem to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+mixin _$OrderItem implements DiagnosticableTreeMixin {
+  String get productId;
+  String get name;
+  String get imageUrl;
+  double get price;
+  int get quantity;
 
   /// Create a copy of OrderItem
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $OrderItemCopyWith<OrderItem> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+      _$OrderItemCopyWithImpl<OrderItem>(this as OrderItem, _$identity);
 
-/// @nodoc
-abstract class $OrderItemCopyWith<$Res> {
-  factory $OrderItemCopyWith(OrderItem value, $Res Function(OrderItem) then) =
-      _$OrderItemCopyWithImpl<$Res, OrderItem>;
-  @useResult
-  $Res call(
-      {String productId,
-      String name,
-      String imageUrl,
-      double price,
-      int quantity});
-}
-
-/// @nodoc
-class _$OrderItemCopyWithImpl<$Res, $Val extends OrderItem>
-    implements $OrderItemCopyWith<$Res> {
-  _$OrderItemCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of OrderItem
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? productId = null,
-    Object? name = null,
-    Object? imageUrl = null,
-    Object? price = null,
-    Object? quantity = null,
-  }) {
-    return _then(_value.copyWith(
-      productId: null == productId
-          ? _value.productId
-          : productId // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      imageUrl: null == imageUrl
-          ? _value.imageUrl
-          : imageUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-      price: null == price
-          ? _value.price
-          : price // ignore: cast_nullable_to_non_nullable
-              as double,
-      quantity: null == quantity
-          ? _value.quantity
-          : quantity // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$OrderItemImplCopyWith<$Res>
-    implements $OrderItemCopyWith<$Res> {
-  factory _$$OrderItemImplCopyWith(
-          _$OrderItemImpl value, $Res Function(_$OrderItemImpl) then) =
-      __$$OrderItemImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String productId,
-      String name,
-      String imageUrl,
-      double price,
-      int quantity});
-}
-
-/// @nodoc
-class __$$OrderItemImplCopyWithImpl<$Res>
-    extends _$OrderItemCopyWithImpl<$Res, _$OrderItemImpl>
-    implements _$$OrderItemImplCopyWith<$Res> {
-  __$$OrderItemImplCopyWithImpl(
-      _$OrderItemImpl _value, $Res Function(_$OrderItemImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of OrderItem
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? productId = null,
-    Object? name = null,
-    Object? imageUrl = null,
-    Object? price = null,
-    Object? quantity = null,
-  }) {
-    return _then(_$OrderItemImpl(
-      productId: null == productId
-          ? _value.productId
-          : productId // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      imageUrl: null == imageUrl
-          ? _value.imageUrl
-          : imageUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-      price: null == price
-          ? _value.price
-          : price // ignore: cast_nullable_to_non_nullable
-              as double,
-      quantity: null == quantity
-          ? _value.quantity
-          : quantity // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$OrderItemImpl with DiagnosticableTreeMixin implements _OrderItem {
-  const _$OrderItemImpl(
-      {required this.productId,
-      required this.name,
-      required this.imageUrl,
-      required this.price,
-      required this.quantity});
-
-  factory _$OrderItemImpl.fromJson(Map<String, dynamic> json) =>
-      _$$OrderItemImplFromJson(json);
-
-  @override
-  final String productId;
-  @override
-  final String name;
-  @override
-  final String imageUrl;
-  @override
-  final double price;
-  @override
-  final int quantity;
-
-  @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'OrderItem(productId: $productId, name: $name, imageUrl: $imageUrl, price: $price, quantity: $quantity)';
-  }
+  /// Serializes this OrderItem to a JSON map.
+  Map<String, dynamic> toJson();
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
     properties
       ..add(DiagnosticsProperty('type', 'OrderItem'))
       ..add(DiagnosticsProperty('productId', productId))
@@ -200,7 +45,7 @@ class _$OrderItemImpl with DiagnosticableTreeMixin implements _OrderItem {
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OrderItemImpl &&
+            other is OrderItem &&
             (identical(other.productId, productId) ||
                 other.productId == productId) &&
             (identical(other.name, name) || other.name == name) &&
@@ -216,145 +61,435 @@ class _$OrderItemImpl with DiagnosticableTreeMixin implements _OrderItem {
   int get hashCode =>
       Object.hash(runtimeType, productId, name, imageUrl, price, quantity);
 
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'OrderItem(productId: $productId, name: $name, imageUrl: $imageUrl, price: $price, quantity: $quantity)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $OrderItemCopyWith<$Res> {
+  factory $OrderItemCopyWith(OrderItem value, $Res Function(OrderItem) _then) =
+      _$OrderItemCopyWithImpl;
+  @useResult
+  $Res call(
+      {String productId,
+      String name,
+      String imageUrl,
+      double price,
+      int quantity});
+}
+
+/// @nodoc
+class _$OrderItemCopyWithImpl<$Res> implements $OrderItemCopyWith<$Res> {
+  _$OrderItemCopyWithImpl(this._self, this._then);
+
+  final OrderItem _self;
+  final $Res Function(OrderItem) _then;
+
   /// Create a copy of OrderItem
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
   @pragma('vm:prefer-inline')
-  _$$OrderItemImplCopyWith<_$OrderItemImpl> get copyWith =>
-      __$$OrderItemImplCopyWithImpl<_$OrderItemImpl>(this, _$identity);
+  @override
+  $Res call({
+    Object? productId = null,
+    Object? name = null,
+    Object? imageUrl = null,
+    Object? price = null,
+    Object? quantity = null,
+  }) {
+    return _then(_self.copyWith(
+      productId: null == productId
+          ? _self.productId
+          : productId // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: null == name
+          ? _self.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      imageUrl: null == imageUrl
+          ? _self.imageUrl
+          : imageUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+      price: null == price
+          ? _self.price
+          : price // ignore: cast_nullable_to_non_nullable
+              as double,
+      quantity: null == quantity
+          ? _self.quantity
+          : quantity // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [OrderItem].
+extension OrderItemPatterns on OrderItem {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_OrderItem value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _OrderItem() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_OrderItem value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _OrderItem():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_OrderItem value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _OrderItem() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String productId, String name, String imageUrl,
+            double price, int quantity)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _OrderItem() when $default != null:
+        return $default(_that.productId, _that.name, _that.imageUrl,
+            _that.price, _that.quantity);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String productId, String name, String imageUrl,
+            double price, int quantity)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _OrderItem():
+        return $default(_that.productId, _that.name, _that.imageUrl,
+            _that.price, _that.quantity);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String productId, String name, String imageUrl,
+            double price, int quantity)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _OrderItem() when $default != null:
+        return $default(_that.productId, _that.name, _that.imageUrl,
+            _that.price, _that.quantity);
+      case _:
+        return null;
+    }
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _OrderItem with DiagnosticableTreeMixin implements OrderItem {
+  const _OrderItem(
+      {required this.productId,
+      required this.name,
+      required this.imageUrl,
+      required this.price,
+      required this.quantity});
+  factory _OrderItem.fromJson(Map<String, dynamic> json) =>
+      _$OrderItemFromJson(json);
+
+  @override
+  final String productId;
+  @override
+  final String name;
+  @override
+  final String imageUrl;
+  @override
+  final double price;
+  @override
+  final int quantity;
+
+  /// Create a copy of OrderItem
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$OrderItemCopyWith<_OrderItem> get copyWith =>
+      __$OrderItemCopyWithImpl<_OrderItem>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$OrderItemImplToJson(
+    return _$OrderItemToJson(
       this,
     );
   }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    properties
+      ..add(DiagnosticsProperty('type', 'OrderItem'))
+      ..add(DiagnosticsProperty('productId', productId))
+      ..add(DiagnosticsProperty('name', name))
+      ..add(DiagnosticsProperty('imageUrl', imageUrl))
+      ..add(DiagnosticsProperty('price', price))
+      ..add(DiagnosticsProperty('quantity', quantity));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _OrderItem &&
+            (identical(other.productId, productId) ||
+                other.productId == productId) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.imageUrl, imageUrl) ||
+                other.imageUrl == imageUrl) &&
+            (identical(other.price, price) || other.price == price) &&
+            (identical(other.quantity, quantity) ||
+                other.quantity == quantity));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, productId, name, imageUrl, price, quantity);
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'OrderItem(productId: $productId, name: $name, imageUrl: $imageUrl, price: $price, quantity: $quantity)';
+  }
 }
 
-abstract class _OrderItem implements OrderItem {
-  const factory _OrderItem(
-      {required final String productId,
-      required final String name,
-      required final String imageUrl,
-      required final double price,
-      required final int quantity}) = _$OrderItemImpl;
+/// @nodoc
+abstract mixin class _$OrderItemCopyWith<$Res>
+    implements $OrderItemCopyWith<$Res> {
+  factory _$OrderItemCopyWith(
+          _OrderItem value, $Res Function(_OrderItem) _then) =
+      __$OrderItemCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {String productId,
+      String name,
+      String imageUrl,
+      double price,
+      int quantity});
+}
 
-  factory _OrderItem.fromJson(Map<String, dynamic> json) =
-      _$OrderItemImpl.fromJson;
+/// @nodoc
+class __$OrderItemCopyWithImpl<$Res> implements _$OrderItemCopyWith<$Res> {
+  __$OrderItemCopyWithImpl(this._self, this._then);
 
-  @override
-  String get productId;
-  @override
-  String get name;
-  @override
-  String get imageUrl;
-  @override
-  double get price;
-  @override
-  int get quantity;
+  final _OrderItem _self;
+  final $Res Function(_OrderItem) _then;
 
   /// Create a copy of OrderItem
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$OrderItemImplCopyWith<_$OrderItemImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-Order _$OrderFromJson(Map<String, dynamic> json) {
-  return _Order.fromJson(json);
-}
-
-/// @nodoc
-mixin _$Order {
-  String get id => throw _privateConstructorUsedError;
-  String get userId => throw _privateConstructorUsedError;
-  List<OrderItem> get items => throw _privateConstructorUsedError;
-  double get totalAmount => throw _privateConstructorUsedError;
-  DateTime get orderDate => throw _privateConstructorUsedError;
-  String get status => throw _privateConstructorUsedError;
-
-  /// Serializes this Order to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Order
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $OrderCopyWith<Order> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $OrderCopyWith<$Res> {
-  factory $OrderCopyWith(Order value, $Res Function(Order) then) =
-      _$OrderCopyWithImpl<$Res, Order>;
-  @useResult
-  $Res call(
-      {String id,
-      String userId,
-      List<OrderItem> items,
-      double totalAmount,
-      DateTime orderDate,
-      String status});
-}
-
-/// @nodoc
-class _$OrderCopyWithImpl<$Res, $Val extends Order>
-    implements $OrderCopyWith<$Res> {
-  _$OrderCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of Order
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
-  @override
   $Res call({
-    Object? id = null,
-    Object? userId = null,
-    Object? items = null,
-    Object? totalAmount = null,
-    Object? orderDate = null,
-    Object? status = null,
+    Object? productId = null,
+    Object? name = null,
+    Object? imageUrl = null,
+    Object? price = null,
+    Object? quantity = null,
   }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
+    return _then(_OrderItem(
+      productId: null == productId
+          ? _self.productId
+          : productId // ignore: cast_nullable_to_non_nullable
               as String,
-      userId: null == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
+      name: null == name
+          ? _self.name
+          : name // ignore: cast_nullable_to_non_nullable
               as String,
-      items: null == items
-          ? _value.items
-          : items // ignore: cast_nullable_to_non_nullable
-              as List<OrderItem>,
-      totalAmount: null == totalAmount
-          ? _value.totalAmount
-          : totalAmount // ignore: cast_nullable_to_non_nullable
+      imageUrl: null == imageUrl
+          ? _self.imageUrl
+          : imageUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+      price: null == price
+          ? _self.price
+          : price // ignore: cast_nullable_to_non_nullable
               as double,
-      orderDate: null == orderDate
-          ? _value.orderDate
-          : orderDate // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
+      quantity: null == quantity
+          ? _self.quantity
+          : quantity // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$OrderImplCopyWith<$Res> implements $OrderCopyWith<$Res> {
-  factory _$$OrderImplCopyWith(
-          _$OrderImpl value, $Res Function(_$OrderImpl) then) =
-      __$$OrderImplCopyWithImpl<$Res>;
+mixin _$Order implements DiagnosticableTreeMixin {
+  String get id;
+  String get userId;
+  List<OrderItem> get items;
+  double get totalAmount;
+  DateTime get orderDate;
+  String get status;
+
+  /// Create a copy of Order
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  $OrderCopyWith<Order> get copyWith =>
+      _$OrderCopyWithImpl<Order>(this as Order, _$identity);
+
+  /// Serializes this Order to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    properties
+      ..add(DiagnosticsProperty('type', 'Order'))
+      ..add(DiagnosticsProperty('id', id))
+      ..add(DiagnosticsProperty('userId', userId))
+      ..add(DiagnosticsProperty('items', items))
+      ..add(DiagnosticsProperty('totalAmount', totalAmount))
+      ..add(DiagnosticsProperty('orderDate', orderDate))
+      ..add(DiagnosticsProperty('status', status));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is Order &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            const DeepCollectionEquality().equals(other.items, items) &&
+            (identical(other.totalAmount, totalAmount) ||
+                other.totalAmount == totalAmount) &&
+            (identical(other.orderDate, orderDate) ||
+                other.orderDate == orderDate) &&
+            (identical(other.status, status) || other.status == status));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      userId,
+      const DeepCollectionEquality().hash(items),
+      totalAmount,
+      orderDate,
+      status);
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'Order(id: $id, userId: $userId, items: $items, totalAmount: $totalAmount, orderDate: $orderDate, status: $status)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $OrderCopyWith<$Res> {
+  factory $OrderCopyWith(Order value, $Res Function(Order) _then) =
+      _$OrderCopyWithImpl;
   @useResult
   $Res call(
       {String id,
@@ -366,12 +501,11 @@ abstract class _$$OrderImplCopyWith<$Res> implements $OrderCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$OrderImplCopyWithImpl<$Res>
-    extends _$OrderCopyWithImpl<$Res, _$OrderImpl>
-    implements _$$OrderImplCopyWith<$Res> {
-  __$$OrderImplCopyWithImpl(
-      _$OrderImpl _value, $Res Function(_$OrderImpl) _then)
-      : super(_value, _then);
+class _$OrderCopyWithImpl<$Res> implements $OrderCopyWith<$Res> {
+  _$OrderCopyWithImpl(this._self, this._then);
+
+  final Order _self;
+  final $Res Function(Order) _then;
 
   /// Create a copy of Order
   /// with the given fields replaced by the non-null parameter values.
@@ -385,39 +519,205 @@ class __$$OrderImplCopyWithImpl<$Res>
     Object? orderDate = null,
     Object? status = null,
   }) {
-    return _then(_$OrderImpl(
+    return _then(_self.copyWith(
       id: null == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
       userId: null == userId
-          ? _value.userId
+          ? _self.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as String,
       items: null == items
-          ? _value._items
+          ? _self.items
           : items // ignore: cast_nullable_to_non_nullable
               as List<OrderItem>,
       totalAmount: null == totalAmount
-          ? _value.totalAmount
+          ? _self.totalAmount
           : totalAmount // ignore: cast_nullable_to_non_nullable
               as double,
       orderDate: null == orderDate
-          ? _value.orderDate
+          ? _self.orderDate
           : orderDate // ignore: cast_nullable_to_non_nullable
               as DateTime,
       status: null == status
-          ? _value.status
+          ? _self.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
     ));
   }
 }
 
+/// Adds pattern-matching-related methods to [Order].
+extension OrderPatterns on Order {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_Order value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _Order() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_Order value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Order():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_Order value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Order() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String id, String userId, List<OrderItem> items,
+            double totalAmount, DateTime orderDate, String status)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _Order() when $default != null:
+        return $default(_that.id, _that.userId, _that.items, _that.totalAmount,
+            _that.orderDate, _that.status);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String id, String userId, List<OrderItem> items,
+            double totalAmount, DateTime orderDate, String status)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Order():
+        return $default(_that.id, _that.userId, _that.items, _that.totalAmount,
+            _that.orderDate, _that.status);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String id, String userId, List<OrderItem> items,
+            double totalAmount, DateTime orderDate, String status)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Order() when $default != null:
+        return $default(_that.id, _that.userId, _that.items, _that.totalAmount,
+            _that.orderDate, _that.status);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 @JsonSerializable()
-class _$OrderImpl with DiagnosticableTreeMixin implements _Order {
-  const _$OrderImpl(
+class _Order with DiagnosticableTreeMixin implements Order {
+  const _Order(
       {required this.id,
       required this.userId,
       required final List<OrderItem> items,
@@ -425,9 +725,7 @@ class _$OrderImpl with DiagnosticableTreeMixin implements _Order {
       required this.orderDate,
       required this.status})
       : _items = items;
-
-  factory _$OrderImpl.fromJson(Map<String, dynamic> json) =>
-      _$$OrderImplFromJson(json);
+  factory _Order.fromJson(Map<String, dynamic> json) => _$OrderFromJson(json);
 
   @override
   final String id;
@@ -448,14 +746,23 @@ class _$OrderImpl with DiagnosticableTreeMixin implements _Order {
   @override
   final String status;
 
+  /// Create a copy of Order
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'Order(id: $id, userId: $userId, items: $items, totalAmount: $totalAmount, orderDate: $orderDate, status: $status)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$OrderCopyWith<_Order> get copyWith =>
+      __$OrderCopyWithImpl<_Order>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$OrderToJson(
+      this,
+    );
   }
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
     properties
       ..add(DiagnosticsProperty('type', 'Order'))
       ..add(DiagnosticsProperty('id', id))
@@ -470,7 +777,7 @@ class _$OrderImpl with DiagnosticableTreeMixin implements _Order {
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OrderImpl &&
+            other is _Order &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.userId, userId) || other.userId == userId) &&
             const DeepCollectionEquality().equals(other._items, _items) &&
@@ -492,50 +799,73 @@ class _$OrderImpl with DiagnosticableTreeMixin implements _Order {
       orderDate,
       status);
 
-  /// Create a copy of Order
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$OrderImplCopyWith<_$OrderImpl> get copyWith =>
-      __$$OrderImplCopyWithImpl<_$OrderImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$OrderImplToJson(
-      this,
-    );
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'Order(id: $id, userId: $userId, items: $items, totalAmount: $totalAmount, orderDate: $orderDate, status: $status)';
   }
 }
 
-abstract class _Order implements Order {
-  const factory _Order(
-      {required final String id,
-      required final String userId,
-      required final List<OrderItem> items,
-      required final double totalAmount,
-      required final DateTime orderDate,
-      required final String status}) = _$OrderImpl;
+/// @nodoc
+abstract mixin class _$OrderCopyWith<$Res> implements $OrderCopyWith<$Res> {
+  factory _$OrderCopyWith(_Order value, $Res Function(_Order) _then) =
+      __$OrderCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String userId,
+      List<OrderItem> items,
+      double totalAmount,
+      DateTime orderDate,
+      String status});
+}
 
-  factory _Order.fromJson(Map<String, dynamic> json) = _$OrderImpl.fromJson;
+/// @nodoc
+class __$OrderCopyWithImpl<$Res> implements _$OrderCopyWith<$Res> {
+  __$OrderCopyWithImpl(this._self, this._then);
 
-  @override
-  String get id;
-  @override
-  String get userId;
-  @override
-  List<OrderItem> get items;
-  @override
-  double get totalAmount;
-  @override
-  DateTime get orderDate;
-  @override
-  String get status;
+  final _Order _self;
+  final $Res Function(_Order) _then;
 
   /// Create a copy of Order
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$OrderImplCopyWith<_$OrderImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? id = null,
+    Object? userId = null,
+    Object? items = null,
+    Object? totalAmount = null,
+    Object? orderDate = null,
+    Object? status = null,
+  }) {
+    return _then(_Order(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      userId: null == userId
+          ? _self.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      items: null == items
+          ? _self._items
+          : items // ignore: cast_nullable_to_non_nullable
+              as List<OrderItem>,
+      totalAmount: null == totalAmount
+          ? _self.totalAmount
+          : totalAmount // ignore: cast_nullable_to_non_nullable
+              as double,
+      orderDate: null == orderDate
+          ? _self.orderDate
+          : orderDate // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      status: null == status
+          ? _self.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
+
+// dart format on
